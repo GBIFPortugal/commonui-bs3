@@ -1,428 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ALA Homepage</title>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/totais.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41841769-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="css/ala-styles.css" rel="stylesheet">
+    gtag('config', 'UA-41841769-3');
+  </script>
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/ala-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/pt-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/all.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
 
-  <!-- FontAwesome -->
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 </head>
-<body class="background-lightgrey">
+<body>
+  <!-- banner section-->
 
-  <!-- Navbar start -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container container-navbar">
+  <!-- logo bar subsection-->
+    <div class="gbif-top-header">
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        <a href="http://www.gbif.pt" style="margin-left:0px; background-color:white;"><img src="images/gbifpt92_1.png"></a>
+        <div class="name-and-slogan">
+          <div class="site-slogan">Global Biodiversity Information Facility</div>
+          <div class="site-name">PORTUGAL</div>
+        </div>
+      </div>
+      <div class="col-sm-8 hidden-xs">
+        <div class="banner-top"></div>
+      </div>
+    </div>
+  </div>
+  <!-- END logo bar-->
+
+  <!-- general menu section -->
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <!-- BRAND -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#general-menu">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">
-          <img alt="Brand" src="https://wpprod2017.ala.org.au/wp-content/themes/ala-wordpress-theme/img/ala-logo-2016-inline.png">
-        </a>
       </div>
+      <!-- COLLAPSIBLE NAVBAR -->
+      <div class="collapse navbar-collapse" id="general-menu">
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="row row-search">
-          <div class="col-xs-12 col-sm-4 col-md-6">
-            <form id="global-search" class="banner" action="https://bie.ala.org.au/search" method="get" name="search-form">
-              <div class="icon-addon addon-lg">
-                <input type="text" placeholder="Search the Atlas ..." class="form-control autocomplete" id="biesearch" name="q">
-                <label for="biesearch" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+        <!-- Links -->
+        <ul class="nav navbar-nav ">
+          <li><a href="http://www.gbif.pt">Início</a></li>
+          <li><a href="http://www.gbif.pt/news">Notícias e Eventos</a></li>
+          <li class="active"><a href="https://dados.gbif.pt">Dados de Biodiversidade</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formação <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="formacao">
+              <li><a href="http://www.gbif.pt/node/461?language=pt-pt">Plano de formação 2019</a></li>
+              <li><a href="http://www.gbif.pt/formacao?language=pt-pt">Todos os cursos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cooperação <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="cooperacao">
+              <li><a href="http://www.gbif.pt/taxonomy/term/45?language=pt-pt">Projectos de colaboração</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/51?language=pt-pt">Aumento Capacitação GBIF</a><li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/47?language=pt-pt">Cooperação na CPLP</a><li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="recursos">
+              <li><a href="http://www.gbif.pt/infraestrutura?language=pt-pt">Infraestrutura</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/49?language=pt-pt">Apresentações</a><li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/39?language=pt-pt">Padrões de dados</a><li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/40?language=pt-pt">Software</a><li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/38?language=pt-pt">Manuais</a><li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre nós <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="sobre-nos">
+              <li><a href="http://www.gbif.pt/node/83?language=pt-pt">Sobre o Nó Português</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/37?language=pt-pt">Antecedentes</a><li>
+              <li><a href="http://www.gbif.pt/planoestrategico?language=pt-pt">Plano Estratégico</a><li>
+              <li><a href="http://www.gbif.pt/relatorios?language=pt-pt">Relatórios</a><li>
+              <li><a href="http://www.gbif.pt/equipa?language=pt-pt">Equipa</a><li>
+              <li><a href="http://www.gbif.pt/contactos?language=pt-pt">Contactos</a><li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Search -->
+        <form class="navbar-form navbar-right" role="search" action="http://www.gbif.pt/search/node/" method="get">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Procurar">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+        </form>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <!--/general menu section -->
+
+  <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="https://dados.gbif.pt">Portal de Dados de Biodiversidade de Portugal</a>
+                <div class="simple-nav-list pull-right">
+                    <ul class="list-inline">
+                        <li><a href="https://dados.gbif.pt">Início</a></li>
+                        <li class="dropdown dropdown-menu-right">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Espécies <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="especies">
+                            <li><a href="https://especies.gbif.pt">Pesquisar espécies</a></li>
+                            <li><a href="https://listas.gbif.pt">Ver/analisar listas de espécies</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ocorrências <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="registos">
+                            <li><a href="https://registos.gbif.pt">Pesquisa simples</a></li>
+                            <li><a href="https://registos.gbif.pt/#advanceSearch">Pesquisa avançada</a></li>
+                            <li><a href="https://registos.gbif.pt/#taxaUpload">Pesquisar várias espécies</a></li>
+                            <li><a href="https://registos.gbif.pt/#catalogUpload">Pesquisar por números de catálogo</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locais <span class="caret"></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="locais">
+                            <li><a href="https://registos.gbif.pt/explore/your-area?default=true">Pesquisar por local</a></li>
+                            <li><a href="https://registos.gbif.pt#tab_spatialSearch">Pesquisar por polígono</a></li>
+                            <li><a href="https://regioes.gbif.pt">Pesquisar por região</a></li>
+                            <!--<li><a href="http://registos.gbif.pt">Análise espacial</a></li>-->
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publicadores <span class="caret"></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="publicadores">
+                            <li><a href="https://metadados.gbif.pt/">Publicadores</a></li>
+                            <li><a href="https://metadados.gbif.pt/datasets">Conjuntos de dados</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre <span class="caret"></span></a>
+                          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="sobre">
+                            <li><a href="https://dados.gbif.pt/sobre.html">Sobre o portal</a></li>
+                            <li><a href="https://dados.gbif.pt/ajuda.html">Como usar</a></li>
+                            <li><a href="https://dados.gbif.pt/citar.html">Como citar</a></li>
+                            <li><hr /></li>
+                            <li><a href="https://dados.gbif.pt/LivingAtlases.html">Comunidade Living Atlases</a></li>
+                            <!--<li><a href="http://registos.gbif.pt">Análise espacial</a></li>-->
+                          </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </div><!--/.navbar-inner -->
+    </div><!--/.navbar -->
+  <!-- End of banner section-->
+
+<div class="main"> <!--main content-->
+  <div class="container-fluid>">
+
+<!--Carousel-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"><!--Carousel-->
+          <div class="container wrap">
+            <form role="search" action="https://registos.gbif.pt/occurrences/search" method="get">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" name="q" placeholder="Pesquise por espécie, local ou observador">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
               </div>
             </form>
           </div>
-          <div class="col-md-2 hidden-xs">
-            <ul class="nav navbar-nav navbar-right nav-login">
-              <li><a href="https://wpprod2017.ala.org.au/wp-login.php?redirect_to=https%3A%2F%2Fwpprod2017.ala.org.au">Log in</a></li>
-            </ul>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
 
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            <img src="images/biodiv/borboleta_h650.jpg" alt="Borboleta">
+              <div class="carousel-caption">
+                <h3 class="fontCarouselH3"><a href="https://dados.gbif.pt/generic-hub">Ocorrências</a></h3>
+                <p class="fontCarouselP">Consulte dados primários de ocorrência.</p>
+              </div>
+            </div>
+
+            <div class="item">
+            <img src="images/biodiv/guardarios_h650.jpg" alt="Guarda rios">
+              <div class="carousel-caption">
+                <h3 class="fontCarouselH3"><a href="#">Dados para espécies</a></h3>
+                <p class="fontCarouselP">Consulte dados para espécies notáveis.</p>
+              </div>
+            </div>
+
+            <div class="item">
+            <img src="images/biodiv/paisagem_h650.jpg" alt="Paisagem">
+              <div class="carousel-caption">
+                <h3 class="fontCarouselH3"><a href="https://dados.gbif.pt/generic-hub/explore/your-area?default=true">Locais</a></h3>
+                <p class="fontCarouselP">Veja os dados para a sua região.</p>
+              </div>
+            </div>
+
+            <div class="item">
+            <img src="images/biodiv/ra_h650.jpg" alt="Rã">
+              <div class="carousel-caption">
+                <h3 class="fontCarouselH3"><a href="https://metadados.gbif.pt/collectory/datasets">Conjuntos de dados</a></h3>
+                <p class="fontCarouselP">Consulte os conjuntos de dados disponívels.</p>
+              </div>
+            </div>
+
+            <div class="item">
+            <img src="images/biodiv/musgo_h650.jpg" alt="Musgo">
+              <div class="carousel-caption">
+                <h3 class="fontCarouselH3"><a href="https://metadados.gbif.pt/collectory">Publicadores</a></h3>
+                <p class="fontCarouselP">Consulte os publicadores de dados de Portugal através do GBIF.</p>
+              </div>
+            </div>
           </div>
-        </div><!-- End row -->
 
-        <ul class="nav navbar-nav">
-          <!-- <li class="active"><a href="#">Home</a></li> -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Start exploring
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
-              <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-              <li><a href="https://regions.ala.org.au/">Explore regions</a></li>
-              <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
-              <!-- <li><a href="https://bie.ala.org.au/">Search species</a></li> -->
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Search &amp; analyse
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://collections.ala.org.au/">Browse natural history collections</a></li>
-              <li><a href="https://collections.ala.org.au/datasets">Search collections datasets</a></li>
-              <li><a href="https://downloads.ala.org.au">Download datasets</a>
-              <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
-              <li class="divider"></li>
-              <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Participate
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://biocollect.ala.org.au/">Join a Citizen Science project</a></li>
-              <li><a href="https://sightings.ala.org.au/">Record a sighting in the ALA</a></li>
-              <li><a href="https://www.ala.org.au/get-involved/upload-data-sets/">Submit a data set to the ALA</a></li>
-              <li><a href="https://digivol.ala.org.au/">Digitise a record in DigiVol</a></li>
-              <li class="divider"></li>
-              <li><a href="/work-with-ala.html">Work with the ALA</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Learn about the ALA
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="/about-the-atlas/">Who we are</a></li>
-              <li class="divider"></li>
-              <li><a href="/how-to-use/">How to use the ALA</a></li>
-              <li><a href="/how-to-work-with-data/">How to work with data</a></li>
-              <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
-              <li class="divider"></li>
-              <li><a href="/education-resources/">Learning resources</a></li>
-              <li><a href="/article-IEK/">Indigenous Ecological Knowledge</a></li>
-              <li class="divider"></li>
-              <li><a href="/blogs-news/">ALA News</a></li>
-              <li class="divider"></li>
-              <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
-              <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right visible-xs">
-          <li><a href="https://wpprod2017.ala.org.au/wp-login.php?redirect_to=https%3A%2F%2Fwpprod2017.ala.org.au"><span class="nav-login">Log in</span></a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <!-- End Navbar -->
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <!--span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  </div>
+  <!--/Carousel-->
 
-  <div class="jumbotron ala-header hidden-print" id="ala-jumbotron">
-    <div class="container">
-      <div class="col-lg-6 col-md-8 col-sm-12 promotional">The <strong>Atlas of Living Australia</strong> is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online</div>
+  <!--Contadores-->
+  <div class="container">
+    <div class="row">
+      <script>
+       window.onload = totalRecords();
+       window.onload = totalRecordsPT();
+       window.onload = totalDatasetsPT();
+       window.onload = totalPublicadoresPT();
+     </script>
+     <div class="col-md-3 block">
+         <div class="circle">
+             <p><a href="https://www.gbif.org/occurrence/search?country=PT" id="totalRecords"></a> ocorrências de Biodiversidade em Portugal</p>
+         </div>
+     </div>
+     <div class="col-md-3 block">
+         <div class="circle">
+             <p><a href="https://www.gbif.org/occurrence/search?publishing_country=PT&advanced=1" id="totalRecordsPT"></a> ocorrências publicadas por Portugal</p>
+         </div>
+     </div>
+     <div class="col-md-3 block">
+         <div class="circle">
+             <p><a href="https://www.gbif.org/publisher/search?country=PT" id="totalDatasetsPT"></a> conjuntos de dados publicados por Portugal</p>
+         </div>
+     </div>
+     <div class="col-md-3 block">
+         <div class="circle">
+             <p><a href="https://www.gbif.org/publisher/search?country=PT" id="totalPublicadoresPT"></a> publicadores portugueses</p>
+         </div>
+     </div>
+   </div>
+  </div>
+  <!--/Contadores-->
+
+<!--destaques topicos Portal-->
+<div class="destaquesPortal">
+  <div class="container-fluid">
+    <h2 class="block-title">Portal de dados</h2>
+    <div class="col-sm-8 col-sm-offset-2 text-center section2H" style="padding-bottom:30px;">O portal de dados do No Português do GBIF contém todos os registos publicados por instituições portuguesas, e registos publicados por instituições estrangeiras para Portugal</div>
+    <div class="row">
+      <div class="col-sm-3 topicos">
+        <img src="images/biodiv/borboleta_335.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h2 class="section2H">Dados de ocorrência</h2>
+        <p class="section2">Pesquise a ocorrência de espécies, por nome científico, local ou coletor/observador. Pode fazer uma pesquisa simples, ou filtrar resultados através da pesquisa avançada.</p>
+        <ul class="section2">
+          <li><a href="https://registos.gbif.pt/search#tab_simpleSearch"><span class="glyphicon glyphicon-search"></span> Pesquisa simples</a></li>
+          <li><a href="https://registos.gbif.pt/search#tab_advanceSearch"><span class="glyphicon glyphicon-search"></span> Pesquise avançada</a></li>
+        </ul class="section2">
+      </div>
+      <div class="col-sm-3 topicos">
+        <img src="images/biodiv/paisagem_335.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h2 class="section2H">Pesquisa espacial</h2>
+        <p class="section2">Obtenha registos de ocorrência de espécies procurando por uma área, por um local, ou definindo um polígono.</p>
+        <ul class="section2">
+          <li><a href="https://regioes.gbif.pt/#rt=States%20and%20territories"><span class="glyphicon glyphicon-search"></span> Pesquise por área</a></li>
+          <li><a href="https://registos.gbif.pt/explore/your-area?default=true"><span class="glyphicon glyphicon-search"></span> Pesquise por local</a></li>
+          <li><a href="https://registos.gbif.pt/#tab_spatialSearch"><span class="glyphicon glyphicon-search"></span> Defina um polígono</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 topicos">
+        <img src="images/biodiv/ave_335.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h2 class="section2H">Espécies </h2>
+        <p class="section2">Consulte fichas de espécies com a descrição da espécie, taxonomia, galeria de imagens, ocorrências, sequências genéticas e bibliografia. Pode também usar listas de espécies para analisar dados do portal.</p>
+      <ul class="section2">
+        <li><a href="https://especies.gbif.pt/"><span class="glyphicon glyphicon-search"></span> Pesquise espécies</a></li>
+        <li><a href="https://listas.gbif.pt/"><span class="glyphicon glyphicon-search"></span> Pesquise listas</a></li>
+      </ul class="section2">
+      </div>
+      <div class="col-sm-3 topicos">
+        <img src="images/biodiv/liquenes_335.jpg" class="img-responsive" style="width:100%" alt="Image">
+        <h2 class="section2H">Publicadores e Conjuntos de dados </h2>
+        <p class="section2">Explore os conjuntos de dados publicados ou instituições nacionais, baseados quer em colecções biológicas, quer em bases de dados de biodiversidade. </p>
+        <ul class="section2">
+          <li><a href="https://metadados.gbif.pt/"><span class="glyphicon glyphicon-search"></span> Consulte instituições</a></li>
+          <li><a href="https://metadados.gbif.pt/datasets"><span class="glyphicon glyphicon-search"></span> Veja conjuntos de dados</a></li>
+      </ul>
+      </div>
     </div>
   </div>
+</div> <!--/destaques topicos Portal-->
 
-  <!-- Promotional alert -->
-  <!-- <div class="alert alert-promotional alert-dismissible hidden-print" role="alert">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="col-md-12">
-          <button type="button" class="close alert-dismissable-button" data-dismiss="alert" aria-label="Close" title="Close"><span aria-hidden="true">&times;</span></button>
-          <p class="alert-text">
-            We will be updating our website over the next couple of months. <a href="#">Read about our Continuous Delivery methodology</a> and you can also <a href="#">read our release notes</a> for our test site.
-          </p>
-        </div>
-      </div>
+<!--publicaUsa-->
+<div class="publicaUsa">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="publicaDados">
+      <h2 class="section3H">Publicar dados de biodiversidade</h2>
+      <p class="section3">O GBIF promove e facilita a publicação de dados de biodiversidade por instituições nacionais. É possível publicar dados de ocorrência, de amostragens ou checklists, utilizando os padrões de dados de software promovido pelo GBIF. <br>O Nó Português do GBIF disponibiliza apoio, formação e infraestrutura para uso destas ferramentas.<br><br><a href="http://www.gbif.pt/taxonomy/term/29"><span class="glyphicon glyphicon-link"></span> Saiba mais</a>
+      </p>
     </div>
-  </div> -->
-  <!-- End promotional alert -->
-
-  <!-- Container -->
-  <div class="container" id="main">
-
-    <div class="col-md-8 col-md-offset-2 hidden">
-      <h1 class="heading-large margin-bottom-quarter-1">Atlas of Living Australia</h1>
-      <h2 class="promotional">
-        The Atlas of Living Australia is a collaborative, national project that aggregates biodiversity data from multiple sources and makes it freely available and usable online
-      </h2>
     </div>
-
-    <!-- Main stats -->
-    <div class="col-md-12">
-      <div class="main-stats row">
-        <div class="main-stats col-lg-3 col-md-3 col-sm-6">
-          <h4>Occurrence Records</h4>
-          <div class="stat-number" id="allRecords">
-            68,000,000
-          </div>
-        </div>
-
-        <div class="main-stats col-lg-3 col-md-3 col-sm-6">
-          <h4>Species</h4>
-          <div class="stat-number" id="allSpecies">
-            472,000
-          </div>
-        </div>
-
-        <div class="main-stats col-lg-3 col-md-3 col-sm-6">
-          <h4>Data downloads</h4>
-          <div class="stat-number" id="allDownloads">
-            914,000
-          </div>
-        </div>
-
-        <div class="main-stats col-lg-3 col-md-3 col-sm-6">
-          <h4>Registered users</h4>
-          <div class="stat-number" id="allUsers">
-            34,000
-          </div>
-        </div>
-      </div><!-- End main stats -->
+    <div class="col-sm-6">
+      <div class="usaDados">
+      <h2 class="section3H">Usar dados de biodiversidade</h2>
+      <p class="section3">Veja exemplos de utiização dos dados publicados através do GBIF. Pode também reutilizar os dados num portal ou aplicação, utilizando web services do portal do GBIF e, no futuro, deste portal.
+      <br><br><a href="https://www.gbif.org/resource/search?contentType=dataUse"><span class="glyphicon glyphicon-link"></span> Ver exemplos de uso</a>
+      <br><a href="https://www.gbif.org/developer/summary"><span class="glyphicon glyphicon-link"></span> Usar dados em aplicações</a></p>
     </div>
-
-
-    <!-- Main col -->
-    <div class="col-md-12">
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/australias-species/"><img class="img-responsive" src="img/homepage-channel-image-koala.jpg"></a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/australias-species/">Australian species</a></h3>
-            <p class="help-block">
-              Search for Australian flora and fauna species by common, scientific name or search by category.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/species-by-location/"><img class="img-responsive" src="img/homepage-channel-image-lionfish.jpg"></a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/species-by-location/">Species by location</a></h3>
-            <p class="help-block">
-              Use the Atlas of Living Australia to browse species by pre-defined region or by location to find species nearby.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/occurrence-records/"><img class="img-responsive" src="img/homepage-channel-image-rainbow-lorikeet.jpg"></a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/occurrence-records/">Occurrence records</a></h3>
-            <p class="help-block">
-              Use the Atlas to Explore species occurrence records using the Spatial Portal or Search Records for species occurrences.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End Col -->
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/get-involved/"><img class="img-responsive" src="https://wptest.ala.org.au/wp-content/themes/ala-wordpress-theme/img/ala-info-hub-get-involved-icon.jpg"></a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/get-involved/">Work with the ALA</a></h3>
-            <p class="help-block">
-              Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/blogs-news/">
-            <img class="img-responsive" src="https://wptest.ala.org.au/wp-content/themes/ala-wordpress-theme/img/ala-info-hub-how-you-can-icon.jpg">
-          </a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/blogs-news/">Browse ALA news</a></h3>
-            <p class="help-block">
-              Learn about the ALA and discover the many different ways in which we can help you achieve your goals.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <div class="panel panel-default">
-          <a href="https://wptest.ala.org.au/atlas-information-hub/">
-            <img class="img-responsive" src="https://wptest.ala.org.au/wp-content/themes/ala-wordpress-theme/img/ala-info-hub-education-icon.jpg">
-          </a>
-          <div class="panel-body">
-            <h3><a href="https://wptest.ala.org.au/atlas-information-hub/">ALA knowledge base</a></h3>
-            <p class="help-block">
-              Did you see something? Photograph something? Contribute your sighting to the Atlas of Living Australia. Log your sighting at our Record a Sighting page.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End Col -->
-    </div><!-- End main col -->
-
   </div>
+</div>
+</div><!--/publicaUsa-->
 
-  <footer>
-    <!-- Container -->
-    <div class="container footer-container ">
-      <!-- <hr class="footer-border"> -->
-      <div class="row footer-nav">
 
-        <div class="col-md-12 margin-bottom-2">
-          <h2 class="heading-large margin-bottom-quarter-1">Atlas of Living Australia</h2>
-          <h3 class="promotional">Sharing biodiversity knowledge to shape our future</h3>
+</main><!--/main content-->
+
+
+
+<div id="footer">
+
+    <div class="container-fluid">
+      <div class="container-fluid" style="width:100%;"> <!--partners-->
+        <div class="row footergbifpt">
+          <div class="row">
+          <h3 class="text-center"> Com o apoio de </h3>
+          </div>
+          <div class="row">
+          <div class="col-sm-2 col-md-offset-1">
+            <a href="http://www.ala.org.au/" target="_blank"><img class="img-responsive center-block" src="images/ala-logo1.png" alt="Atlas  of Living Australia" title="Atlas  of Living Australia"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://living-atlases.gbif.org/" target="_blank"><img class="img-responsive center-block" src="images/Living_Atlases_community.png" alt="Living Atlases" title="GBIF Portugal"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://www.gbif.org/" target="_blank"><img class="img-responsive center-block" src="images/GBIF-2015.png" alt="GBIF" title="GBIF"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://www.incd.pt/ " target="_blank"><img class="img-responsive center-block" src="images/incd-logo-gray.png" alt="INCD" title="INCD"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://www.porbiota.pt/ " target="_blank"><img class="img-responsive center-block" src="images/porbiota_principal.png" alt="PORBIOTA" title="INCD"/></a>
+          </div>
+          <!--<div class="col-sm-2">
+              <a href="https://www.gbif.pt/ " target="_blank"><img class="img-responsive center-block" src="images/GBIFPORTUGAL.png" alt="GBIF Portugal" title="GBIF Portugal"/></a>
+          </div>-->
+          </div>
+        </div>
+      </div><!--/partners-->
+
+
+      <div class="container-fluid"> <!-- footer menu-->
+        <div class="row footermenu ">
+        <div class="col-sm-6">
+        <div class="col-sm-3"><h2><a href="http://www.gbif.pt">Início</a></h2></div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/28">Notícias</a></h2></div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/29">Participar</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/18">Publicadores Portugueses</a></li>
+              <li><a href="http://www.gbif.pt/node/492">Acordo de partilha de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/133">Ciclo de publicação de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/17">Como partilhar</a></li>
+              <li><a href="http://www.gbif.pt/node/46">Informação sobre uso</a></li>
+              <li><a href="http://www.gbif.pt/node/16">Porquê partilhar</a></li>
+              <li><a href="http://www.gbif.pt/node/115">Questionário</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/30">Dados</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/491">Acordo de utilização de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/24">Pesquisar e aceder aos dados</a></li>
+              <li><a href="http://www.gbif.pt/node/133">Exemplos de uso dos dados</a></li>
+              <li><a href="http://www.gbif.pt/node/17">Política de Acesso Aberto</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="col-sm-6">
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/44">Cooperação</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/taxonomy/term/51">Aumento de capacitação GBIF</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/45">Pesquisar e aceder aos dados</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/47">Exemplos de uso dos dados</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/31">Recursos</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/taxonomy/term/49">Apresentações</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/42">Formação</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/50">Materiais promocionais</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/39">Padrões</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/40">Software</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/38">Manuais</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/43">Folha informativa</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/32">Sobre nós</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/83">Sobre o Nó Português</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/37">Antecedentes</a></li>
+              <li><a href="http://www.gbif.pt/node/79">Contactos</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/48">Relatórios</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2>Redes sociais</h2>
+            <ul class="list-unstyled">
+            <li class="redesSociais"><a href="https://twitter.com/gbifportugal" target="_blank"><i class="fab fa-twitter"></i></a><span class="tab-space"> </span><a href="https://www.facebook.com/pages/Nó-Português-do-GBIF/294265787393100" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <hr style="width:50%; margin-left: 0px;">
+            <li>Subscrever a <a href="http://www.gbif.pt/subscrever_comunicacoes?language=pt-pt">folha informativa</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div><!--/footer menu-->
+
+        <div class="row credits">
+          <div class ="col-sm-12"> Créditos:<br />
+            Fotografias: <a href="https://www.flickr.com/photos/83637132@N02">César Garcia</a>. Esta página usa <a href="http://drupal.org">Drupal</a>, a biblioteca css <a href="http://getbootstrap.com">Bootstrap 3</a>, icons <a href="http://glyphicons.com/">Glyphicons</a> e fontes <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>.
+            </div>
         </div>
 
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
-          <h5>Start exploring</h5>
-          <ul class="link-list">
-            <li><a href="https://lists.ala.org.au/iconic-species">Australian species</a></li>
-            <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-            <li><a href="https://regions.ala.org.au/">Explore your region</a></li>
-            <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
-          <h5>Search &amp; analyse</h5>
-          <ul class="link-list">
-            <li><a href="https://collections.ala.org.au/">Browse natural history collections</a></li>
-            <li><a href="https://collections.ala.org.au/datasets">Search collections datasets</a></li>
-            <li><a href="https://downloads.ala.org.au">Download datasets</a>
-            <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
-            <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
-          </ul>
-        </div>
-
-        <div class="clearfix visible-xs-block">
-          <!-- This fixes the alignment issues of the footer columns -->
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
-          <h5 class="footer-second-row">Participate</h5>
-          <ul class="link-list">
-            <li><a href="https://biocollect.ala.org.au/">Join a CS project</a></li>
-            <li><a href="https://sightings.ala.org.au/">Record a sighting</a></li>
-            <li><a href="/get-involved/upload-data-sets/">Submit a dataset</a></li>
-            <li><a href="https://digivol.ala.org.au/">Digitise a record</a></li>
-            <li><a href="/work-with-ala.html">Work with the ALA</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 hidden-print">
-          <h5 class="footer-second-row">Learn about the ALA</h5>
-          <ul class="link-list">
-            <li><a href="/about-the-atlas/">Who we are</a></li>
-            <li><a href="/how-to-use/">How to use the ALA</a></li>
-            <li><a href="/how-to-work-with-data/">How to work with data</a></li>
-            <li><a href="/about-the-atlas/terms-of-use/citing-the-atlas/">How to cite the ALA</a></li>
-            <li><a href="/education-resources/">Learning resources</a></li>
-            <li><a href="/article-IEK/">Indigenous Ecological Knowledge</a></li>
-            <li><a href="/blogs-news/">ALA News</a></li>
-            <li><a href="/about-the-atlas/contact-us/">Contact us</a></li>
-            <li><a href="/about-the-atlas/feedback-form/">Feedback form</a></li>
-          </ul>
-        </div>
+      <div class="row license">
+         <div class="col-sm-6">
+           Excepto quando declarado, os conteúdos deste sítio são licenciados através da licença <a href="https://creativecommons.org/licenses/by/3.0/pt/" title="External link to Creative Commons" class="external">Creative Commons Atribuição 3.0 Portugal</a>.
+             <a href="https://creativecommons.org/licenses/by/3.0/pt/" title="External link to Creative Commons"><img src="https://i.creativecommons.org/l/by/3.0/88x31.png" width="88" height="31" alt=""></a><br><br>
+             A utilização de conteúdos GBIF está sujeito ao <a href="https://www.gbif.org/terms/licences/data-use" title="Acordo de Utilização de Dados">Acordo de Utilização de Dados GBIF</a>, e à <a href="http://www.gbif.pt/node/116" title="Política de Privacidade">Política de Privacidade</a>.
+         </div>
+         <div class="col-sm-6">
+           <p>O <a href="http://www.gbif.pt" title="Nó Português do GBIF">Nó Português do GBIF</a> é acolhido pelo <a href="http://www.isa.ulisboa.pt" title="Instituto Superior de Agronomia (ISA)">Instituto Superior de Agronomia (ISA)</a>,
+           com o apoio da <a href="http://www.fct.pt" title="Fundação para a Ciência e a Tecnologia (FCT)">Fundação para a Ciência e a Tecnologia (FCT)</a>.</p><br>
+           <p><a href="http://www.isa.ulisboa.pt" target="_blank"><img src="images/LogoISA.png" class="img-rounded img-responsive center-block" alt="Instituto Superior de Agronomia da Universidade de Lisboa" title="Instituto Superior de Agronomia da Universidade de Lisboa"/></a></p>
+           <p><a href="http://www.fct.pt" target="_blank"><img src="images/2017_FCT_H_cor.jpg" class="img-rounded img-responsive center-block" alt="Fundação para a Ciência e a Tecnologia" title="Fundação para a Ciência e a Tecnologia"/></a></p>
+         </div>
       </div>
 
-      <div class="row footer-bonus">
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Explore the Spatial Portal</h5>
-          <a href="https://spatial.ala.org.au/" title="Spatial portal" class="footer-bonus-link">
-            <img class="img-responsive" src="https://wpprod2017.ala.org.au/wp-content/themes/ala-wordpress-theme/img/footer-bonus-spatial-portal-icon.png" alt="Spatial Portal icon">
-          </a>
-          <p class="footer-bonus-description"><a href="https://spatial.ala.org.au/">Explore species occurrence records</a> in the context of their environment. Find records and model species distributions. Export reports, maps and data.</p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Join a Citizen Science Project</h5>
-          <a href="https://biocollect.ala.org.au/" title="Contribute your sightings" class="footer-bonus-link">
-            <img class="img-responsive" src="https://wpprod2017.ala.org.au/wp-content/themes/ala-wordpress-theme/img/footer-bonus-cit-science-icon.png" alt="Citizen Science icon">
-          </a>
-          <p class="footer-bonus-description">Find out how you can <a href="https://biocollect.ala.org.au/">contribute to a citizen science project</a> in your area, or explore one of the many citizen science projects supported by the ALA.</p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Record a sighting</h5>
-          <a href="https://sightings.ala.org.au/" title="Did you see something?" class="footer-bonus-link">
-            <img class="img-responsive" src="https://wpprod2017.ala.org.au/wp-content/themes/ala-wordpress-theme/img/footer-bonus-record-sighting-icon.png" alt="Sightings icon">
-          </a>
-          <p class="footer-bonus-description">Did you see something? Photograph something? <a href="https://sightings.ala.org.au/">Contribute your sighting</a> to the Atlas of Living Australia.</p>
-        </div>
 
-      </div>
+    </div> <!--/#container-fluid -->
+</div><!--/#footer -->
 
-      <!-- Acknowledgement section -->
-      <div class="row col-sm-12 acknowledgement-callout acknowledgement-callout-ala">
-        <div class="col-md-10 col-sm-12">
-          <h4 class="margin-bottom-half-1">Acknowledgement of Traditional Owners and Country</h4>
-          <p>The Atlas of Living Australia acknowledges Australia’s Traditional Owners and pays respect to the past and present Elders of the nation’s Aboriginal and Torres Strait Islander communities. We honour and celebrate the spiritual, cultural and customary connections of Traditional Owners to country and the biodiversity that forms part of that country.</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-
-      <!-- Logo section -->
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="footer-bonus-heading">The ALA is made possible by contributions from its partners, is supported by NCRIS and hosted by CSIRO</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 footer-bonus-brands">
-          <a href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris" target="_blank" class="img-responsive" id="ncris"></a>
-          <a href="https://www.csiro.au/" target="_blank" id="csiro"></a>
-          <a href="https://www.gbif.org/" target="_blank" class="img-responsive" id="gbif"></a>
-        </div>
-      </div>
-      <!-- End logo section -->
-
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="footer-list">
-            <li class="footer-item footer-social-item">
-              <a title="Twitter" class="footer-social-link" href="https://www.facebook.com/atlasoflivingaustralia"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="footer-item footer-social-item">
-              <a title="Facebook" class="footer-social-link" href="https://twitter.com/#!/atlaslivingaust"><i class="fa fa-twitter"></i></a>
-            </li>
-
-            <li class="footer-item footer-item-text footer-item-start"><a href="https://www.csiro.au/en/About/Footer/Copyright">Copyright</a></li>
-            <li class="footer-item footer-item-text"><a href="/about-the-atlas/terms-of-use/">Terms of use</a></li>
-            <li class="footer-item footer-item-text"><a href="/about-the-atlas/contact-us/">Contact us</a></li>
-            <li class="footer-item footer-item-status"><a href="/system-status/">System status</a></li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- End Container -->
-  </footer>
-
-  <!-- Creative commons alert -->
-  <div class="alert alert-creativecommons hidden-print" role="alert">
-    <div class="container alert-container">
-      <div class="row-fluid">
-        <div class="col-md-12">
-          <p class="alert-text text-creativecommons">
-            This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/au/" target="_blank">Creative Commons Attribution 3.0 Australia License</a>&ensp;<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Creative commons alert -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ala-wp-common.js"></script>
 </body>
 </html>

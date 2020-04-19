@@ -1,130 +1,175 @@
-<!-- Navbar start -->
-  <nav class="navbar navbar-default navbar-fixed-top ::authStatusClass::">
-    <div class="container container-navbar">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="::centralServer::/">
-          <img alt="Brand" src="::headerFooterServer::/img/ala-logo-2016-inline.png">
-        </a>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/totais.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41841769-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-41841769-3');
+  </script>
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/ala-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/pt-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/all.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+
+</head>
+<body>
+<!-- banner section-->
+
+<!-- logo bar subsection-->
+  <div class="gbif-top-header">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <a href="http://www.gbif.pt" style="margin-left:0px; background-color:white;"><img src="https://dados.gbif.pt/images/gbifpt92_1.png"></a>
+      <div class="name-and-slogan">
+        <div class="site-slogan">Global Biodiversity Information Facility</div>
+        <div class="site-name">PORTUGAL</div>
       </div>
+    </div>
+    <div class="col-sm-8 hidden-xs">
+      <div class="banner-top"></div>
+    </div>
+  </div>
+</div>
+<!-- END logo bar-->
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="row row-search">
-          <div class="col-xs-12 col-sm-4 col-md-6">
-            <form id="global-search" class="banner" action="::searchServer::::searchPath::" method="get" name="search-form">
-              <div class="icon-addon addon-lg">
-                <input type="text" placeholder="Search the Atlas ..." class="form-control autocomplete" id="biesearch" name="q">
-                <label for="biesearch" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-2 hidden-xs">
-            <ul class="nav navbar-nav navbar-right nav-login">
-              <li>::loginLogoutListItem::</li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right nav-logged-in">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                  My profile
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="https://auth.ala.org.au/userdetails/myprofile/">View profile</a></li>
-                  <li><a href="https://auth.ala.org.au/userdetails/registration/editAccount">Account settings</a></li>
-                  <li class="divider"></li>
-                  <li>::loginLogoutListItem::</li>
-                </ul>
-              </li>
-            </ul>
+<!-- general menu section -->
 
-          </div>
-        </div><!-- End row -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
 
-        <ul class="nav navbar-nav">
-          <!-- <li class="active"><a href="#">Home</a></li> -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Start exploring
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
-              <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-              <li><a href="https://regions.ala.org.au/">Explore regions</a></li>
-              <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
-              <li class="divider"></li>
-              <li><a href="::centralServer::/sites-and-services/">Sites &amp; services</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Search &amp; analyse
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://collections.ala.org.au/">Browse natural history collections</a></li>
-              <li><a href="https://collections.ala.org.au/datasets">Search datasets</a></li>
-              <li><a href="https://downloads.ala.org.au">Download datasets</a>
-              <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
-              <li class="divider"></li>
-              <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Participate
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://biocollect.ala.org.au/acsa">Join a Citizen Science project</a></li>
-              <li><a href="https://www.ala.org.au/home/record-a-sighting/">Record a sighting</a></li>
-              <li><a href="::centralServer::/submit-dataset-to-ala/">Submit a dataset to the ALA</a></li>
-              <li><a href="https://digivol.ala.org.au/">Digitise a record in DigiVol</a></li>
-              <li><a href="::centralServer::/who-we-are/downloadable-tools/ala-mobile-app/">Mobile apps</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Learn about the ALA
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="::centralServer::/who-we-are/">Who we are</a></li>
-              <li class="divider"></li>
-              <li><a href="::centralServer::/how-to-use-ala/">How to use the ALA</a></li>
-              <li><a href="::centralServer::/how-to-work-with-data/">How to work with data</a></li>
-              <li><a href="::centralServer::/how-to-cite-ala/">How to cite the ALA</a></li>
-              <li class="divider"></li>
-              <li><a href="::centralServer::/education-resources/">Education resources</a></li>
-              <li><a href="::centralServer::/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
-              <li class="divider"></li>
-              <li><a href="::centralServer::/blogs-news/">ALA Blog</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Help
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="https://support.ala.org.au/">Knowledge base</a></li>
-              <li class="divider"></li>
-              <li><a href="::centralServer::/about-the-atlas/contact-us/">Contact us</a></li>
-              <li><a href="::centralServer::/about-the-atlas/feedback-form/">Feedback form</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right visible-xs">
-          <li><a href="https://auth.ala.org.au/userdetails/myprofile/"><span class="nav-login">View profile</span></a></li>
-          <li><a href="https://auth.ala.org.au/userdetails/registration/editAccount"><span class="nav-login">Account settings</span></a></li>
-          <li>::loginLogoutListItem::</li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
-  <!-- End Navbar -->
+    <!-- BRAND -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#general-menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- COLLAPSIBLE NAVBAR -->
+    <div class="collapse navbar-collapse" id="general-menu">
+
+      <!-- Links -->
+      <ul class="nav navbar-nav ">
+        <li><a href="http://www.gbif.pt">Início</a></li>
+        <li><a href="http://www.gbif.pt/news">Notícias e Eventos</a></li>
+        <li class="active"><a href="https://dados.gbif.pt">Dados de Biodiversidade</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formação <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="formacao">
+            <li><a href="http://www.gbif.pt/node/461?language=pt-pt">Plano de formação 2019</a></li>
+            <li><a href="http://www.gbif.pt/formacao?language=pt-pt">Todos os cursos</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cooperação <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="cooperacao">
+            <li><a href="http://www.gbif.pt/taxonomy/term/45?language=pt-pt">Projectos de colaboração</a></li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/51?language=pt-pt">Aumento Capacitação GBIF</a><li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/47?language=pt-pt">Cooperação na CPLP</a><li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recursos <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="recursos">
+            <li><a href="http://www.gbif.pt/infraestrutura?language=pt-pt">Infraestrutura</a></li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/49?language=pt-pt">Apresentações</a><li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/39?language=pt-pt">Padrões de dados</a><li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/40?language=pt-pt">Software</a><li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/38?language=pt-pt">Manuais</a><li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre nós <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="sobre-nos">
+            <li><a href="http://www.gbif.pt/node/83?language=pt-pt">Sobre o Nó Português</a></li>
+            <li><a href="http://www.gbif.pt/taxonomy/term/37?language=pt-pt">Antecedentes</a><li>
+            <li><a href="http://www.gbif.pt/planoestrategico?language=pt-pt">Plano Estratégico</a><li>
+            <li><a href="http://www.gbif.pt/relatorios?language=pt-pt">Relatórios</a><li>
+            <li><a href="http://www.gbif.pt/equipa?language=pt-pt">Equipa</a><li>
+            <li><a href="http://www.gbif.pt/contactos?language=pt-pt">Contactos</a><li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Search -->
+      <form class="navbar-form navbar-right" role="search" action="http://www.gbif.pt/search/node/" method="get">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Procurar">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+      </form>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+
+<!--/ general menu section -->
+
+<!-- End general menu section -->
+  <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+          <div class="container-fluid">
+              <a class="brand" href="https://dados.gbif.pt">Portal de Dados de Biodiversidade de Portugal</a>
+              <div class="simple-nav-list pull-right">
+                  <ul class="list-inline">
+                      <li><a href="https://dados.gbif.pt">Início</a></li>
+                      <li class="dropdown dropdown-menu-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Espécies <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="especies">
+                          <li><a href="http://especies.gbif.pt">Pesquisar espécies</a></li>
+                          <li><a href="http://listas.gbif.pt">Ver/analisar listas de espécies</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ocorrências <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="registos">
+                          <li><a href="http://registos.gbif.pt">Pesquisa simples</a></li>
+                          <li><a href="http://registos.gbif.pt/#advanceSearch">Pesquisa avançada</a></li>
+                          <li><a href="http://registos.gbif.pt/#taxaUpload">Pesquisar várias espécies</a></li>
+                          <li><a href="http://registos.gbif.pt/#catalogUpload">Pesquisar por números de catálogo</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locais <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="locais">
+                          <li><a href="http://registos.gbif.pt/explore/your-area?default=true">Pesquisar por local</a></li>
+                          <li><a href="http://registos.gbif.pt#tab_spatialSearch">Pesquisar por polígono</a></li>
+                          <li><a href="http://regioes.gbif.pt">Pesquisar por região</a></li>
+                          <!--<li><a href="http://registos.gbif.pt">Análise espacial</a></li>-->
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publicadores <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="publicadores">
+                          <li><a href="http://metadados.gbif.pt/">Publicadores</a></li>
+                          <li><a href="http://metadados.gbif.pt/datasets">Conjuntos de dados</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="sobre">
+                          <li><a href="https://dados.gbif.pt/sobre.html">Sobre o portal</a></li>
+                          <li><a href="https://dados.gbif.pt/ajuda.html">Como usar</a></li>
+                          <li><a href="https://dados.gbif.pt/citar.html">Como citar</a></li>
+                          <li><hr /></li>
+                          <li><a href="https://dados.gbif.pt/LivingAtlases.html">Comunidade Living Atlases</a></li>
+                          <!--<li><a href="http://registos.gbif.pt">Análise espacial</a></li>-->
+                        </ul>
+                      </li>
+                  </ul>
+              </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+      </div><!--/.navbar-inner -->
+  </div><!--/.navbar -->
+<!-- End of banner section-->
+</body>
+</html>

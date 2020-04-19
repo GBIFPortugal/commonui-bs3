@@ -1,182 +1,145 @@
- <footer>
-    <!-- Container -->
-    <div class="container footer-container ">
-      <hr class="footer-border">
-      <div class="row footer-nav">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/totais.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41841769-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        <div class="col-md-12 margin-bottom-2">
-          <h2 class="heading-large margin-bottom-quarter-1">Atlas of Living Australia</h2>
-          <h3 class="promotional">Sharing biodiversity knowledge to shape our future</h3>
+    gtag('config', 'UA-41841769-3');
+  </script>
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/bootstrap-theme.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/ala-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/pt-styles.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+  <link href="css/all.css" type="text/css" rel="stylesheet" media="screen, projection, print" />
+
+</head>
+<body>
+<div id="footer">
+
+    <div class="container-fluid">
+      <div class="container-fluid" style="width:100%;"> <!--partners-->
+        <div class="row footergbifpt">
+          <div class="row">
+          <h3 class="text-center"> Com o apoio de </h3>
+          </div>
+          <div class="row">
+          <div class="col-sm-2 col-md-offset-1">
+            <a href="http://www.ala.org.au/" target="_blank"><img class="img-responsive center-block" src="https://dados.gbif.pt/images/ala-logo1.png" alt="Atlas  of Living Australia" title="Atlas  of Living Australia"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://living-atlases.gbif.org/" target="_blank"><img class="img-responsive center-block" src="https://dados.gbif.pt/images/Living_Atlases_community.png" alt="Living Atlases" title="GBIF Portugal"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="http://www.gbif.org/" target="_blank"><img class="img-responsive center-block" src="https://dados.gbif.pt/images/GBIF-2015.png" alt="GBIF" title="GBIF"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://www.incd.pt/ " target="_blank"><img class="img-responsive center-block" src="https://dados.gbif.pt/images/incd-logo-gray.png" alt="INCD" title="INCD"/></a>
+          </div>
+          <div class="col-sm-2">
+              <a href="https://www.porbiota.pt/ " target="_blank"><img class="img-responsive center-block" src="https://dados.gbif.pt/images/porbiota_principal.png" alt="PORBIOTA" title="INCD"/></a>
+          </div>
+          <!--<div class="col-sm-2">
+              <a href="https://www.gbif.pt/ " target="_blank"><img class="img-responsive center-block" src="images/GBIFPORTUGAL.png" alt="GBIF Portugal" title="GBIF Portugal"/></a>
+          </div>-->
+          </div>
+        </div>
+      </div><!--/partners-->
+
+
+      <div class="container-fluid"> <!-- footer menu-->
+        <div class="row footermenu ">
+        <div class="col-sm-6">
+        <div class="col-sm-3"><h2><a href="http://www.gbif.pt">Início</a></h2></div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/28">Notícias</a></h2></div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/29">Participar</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/18">Publicadores Portugueses</a></li>
+              <li><a href="http://www.gbif.pt/node/492">Acordo de partilha de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/133">Ciclo de publicação de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/17">Como partilhar</a></li>
+              <li><a href="http://www.gbif.pt/node/46">Informação sobre uso</a></li>
+              <li><a href="http://www.gbif.pt/node/16">Porquê partilhar</a></li>
+              <li><a href="http://www.gbif.pt/node/115">Questionário</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/30">Dados</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/491">Acordo de utilização de dados</a></li>
+              <li><a href="http://www.gbif.pt/node/24">Pesquisar e aceder aos dados</a></li>
+              <li><a href="http://www.gbif.pt/node/133">Exemplos de uso dos dados</a></li>
+              <li><a href="http://www.gbif.pt/node/17">Política de Acesso Aberto</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="col-sm-6">
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/44">Cooperação</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/taxonomy/term/51">Aumento de capacitação GBIF</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/45">Pesquisar e aceder aos dados</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/47">Exemplos de uso dos dados</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/31">Recursos</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/taxonomy/term/49">Apresentações</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/42">Formação</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/50">Materiais promocionais</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/39">Padrões</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/40">Software</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/38">Manuais</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/43">Folha informativa</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2><a href="http://www.gbif.pt/taxonomy/term/32">Sobre nós</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="http://www.gbif.pt/node/83">Sobre o Nó Português</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/37">Antecedentes</a></li>
+              <li><a href="http://www.gbif.pt/node/79">Contactos</a></li>
+              <li><a href="http://www.gbif.pt/taxonomy/term/48">Relatórios</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3"><h2>Redes sociais</h2>
+            <ul class="list-unstyled">
+            <li class="redesSociais"><a href="https://twitter.com/gbifportugal" target="_blank"><i class="fa fa-twitter"></i></a><span class="tab-space"> </span><a href="https://www.facebook.com/pages/Nó-Português-do-GBIF/294265787393100" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+            <hr style="width:50%; margin-left: 0px;">
+            <li>Subscrever a <a href="http://www.gbif.pt/subscrever_comunicacoes?language=pt-pt">folha informativa</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div><!--/footer menu-->
+
+        <div class="row credits">
+          <div class ="col-sm-12"> Créditos:<br />
+            Fotografias: <a href="https://www.flickr.com/photos/83637132@N02">César Garcia</a>. Esta página usa <a href="http://drupal.org">Drupal</a>, a biblioteca css <a href="http://getbootstrap.com">Bootstrap 3</a>, icons <a href="http://glyphicons.com/">Glyphicons</a> e fontes <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>.
+            </div>
         </div>
 
-        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
-          <h5>Start exploring</h5>
-          <ul class="link-list">
-            <li><a href="https://lists.ala.org.au/iconic-species">Australian iconic species</a></li>
-            <li><a href="https://biocache.ala.org.au/explore/your-area">Explore your area</a></li>
-            <li><a href="https://regions.ala.org.au/">Explore regions</a></li>
-            <li><a href="https://biocache.ala.org.au/search">Search occurrence records</a></li>
-            <li><a href="::centralServer::/sites-and-services/">Sites &amp; services</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
-          <h5>Search &amp; analyse</h5>
-          <ul class="link-list">
-            <li><a href="https://collections.ala.org.au/">Browse natural history collections</a></li>
-            <li><a href="https://collections.ala.org.au/datasets">Search datasets</a></li>
-            <li><a href="https://downloads.ala.org.au">Download datasets</a>
-            <li><a href="https://spatial.ala.org.au/">Spatial portal</a></li>
-            <li><a href="https://dashboard.ala.org.au/">ALA dashboard</a></li>
-          </ul>
-        </div>
-
-        <div class="clearfix visible-xs-block">
-          <!-- This fixes the alignment issues of the footer columns -->
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
-          <h5 class="footer-second-row">Participate</h5>
-          <ul class="link-list">
-            <li><a href="https://biocollect.ala.org.au/acsa">Join a citizen science project</a></li>
-            <li><a href="https://www.ala.org.au/home/record-a-sighting/">Record a sighting</a></li>
-            <li><a href="::centralServer::/submit-dataset-to-ala/">Submit a dataset to the ALA</a></li>
-            <li><a href="https://digivol.ala.org.au/">Digitise a record</a></li>
-            <li><a href="::centralServer::/who-we-are/downloadable-tools/ala-mobile-app/">Mobile apps</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
-          <h5 class="footer-second-row">Learn about the ALA</h5>
-          <ul class="link-list">
-            <li><a href="::centralServer::/who-we-are/">Who we are</a></li>
-            <li><a href="::centralServer::/how-to-use-ala/">How to use the ALA</a></li>
-            <li><a href="::centralServer::/how-to-work-with-data/">How to work with data</a></li>
-            <li><a href="::centralServer::/how-to-cite-ala/">How to cite the ALA</a></li>
-            <li><a href="::centralServer::/education-resources/">Education resources</a></li>
-            <li><a href="::centralServer::/ala-and-indigenous-ecological-knowledge-iek/">Indigenous Ecological Knowledge</a></li>
-            <li><a href="::centralServer::/blogs-news/">ALA Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-lg-2 hidden-print">
-          <h5 class="footer-second-row">Help</h5>
-          <ul class="link-list">
-            <li><a href="https://support.ala.org.au/">Knowledge base</a></li>
-            <li><a href="::centralServer::/about-the-atlas/contact-us/">Contact us</a></li>
-            <li><a href="::centralServer::/about-the-atlas/feedback-form/">Feedback form</a></li>
-          </ul>
-        </div>
+      <div class="row license">
+         <div class="col-sm-6">
+           Excepto quando declarado, os conteúdos deste sítio são licenciados através da licença <a href="https://creativecommons.org/licenses/by/3.0/pt/" title="External link to Creative Commons" class="external">Creative Commons Atribuição 3.0 Portugal</a>.
+             <a href="http://creativecommons.org/licenses/by/3.0/pt/" title="External link to Creative Commons"><img src="https://i.creativecommons.org/l/by/3.0/88x31.png" width="88" height="31" alt=""></a><br><br>
+             A utilização de conteúdos GBIF está sujeito ao <a href="http://www.gbif.org/terms/licences/data-use" title="Acordo de Utilização de Dados">Acordo de Utilização de Dados GBIF</a>, e à <a href="http://www.gbif.pt/node/116" title="Política de Privacidade">Política de Privacidade</a>.
+         </div>
+         <div class="col-sm-6">
+           <p>O <a href="http://www.gbif.pt" title="Nó Português do GBIF">Nó Português do GBIF</a> é acolhido pelo <a href="http://www.isa.ulisboa.pt" title="Instituto Superior de Agronomia (ISA)">Instituto Superior de Agronomia (ISA)</a>,
+           com o apoio da <a href="http://www.fct.pt" title="Fundação para a Ciência e a Tecnologia (FCT)">Fundação para a Ciência e a Tecnologia (FCT)</a>.</p><br>
+           <p><a href="http://www.isa.ulisboa.pt" target="_blank"><img src="https://dados.gbif.pt/images/LogoISA.png" class="img-rounded img-responsive center-block" alt="Instituto Superior de Agronomia da Universidade de Lisboa" title="Instituto Superior de Agronomia da Universidade de Lisboa"/></a></p>
+           <p><a href="http://www.fct.pt" target="_blank"><img src="https://dados.gbif.pt/images/2017_FCT_H_cor.jpg" class="img-rounded img-responsive center-block" alt="Fundação para a Ciência e a Tecnologia" title="Fundação para a Ciência e a Tecnologia"/></a></p>
+         </div>
       </div>
 
-      <div class="row footer-bonus">
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Explore the Spatial Portal</h5>
-          <a href="https://spatial.ala.org.au/" title="Spatial portal" class="footer-bonus-link">
-            <img class="img-responsive" src="::headerFooterServer::/img/footer-bonus-spatial-portal-icon.png" alt="Spatial Portal icon">
-          </a>
-          <p class="footer-bonus-description"><a href="https://spatial.ala.org.au/">Explore species occurrence records</a> in the context of their environment. Find records and model species distributions. Export reports, maps and data.</p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Join a Citizen Science Project</h5>
-          <a href="https://biocollect.ala.org.au/acsa" title="Contribute your sightings" class="footer-bonus-link">
-            <img class="img-responsive" src="::headerFooterServer::/img/footer-bonus-cit-science-icon.png" alt="Citizen Science icon">
-          </a>
-          <p class="footer-bonus-description">Find out how you can <a href="https://biocollect.ala.org.au/acsa">contribute to a citizen science project</a> in your area, or explore one of the many citizen science projects supported by the ALA.</p>
-        </div>
-        <div class="col-md-4 col-sm-12 footer-bonus-item">
-          <h5 class="footer-bonus-heading">Record a sighting</h5>
-          <a href="https://www.ala.org.au/home/record-a-sighting/" title="Did you see something?" class="footer-bonus-link">
-            <img class="img-responsive" src="::headerFooterServer::/img/footer-bonus-record-sighting-icon.png" alt="Sightings icon">
-          </a>
-          <p class="footer-bonus-description">Did you see something? Photograph something? <a href="https://www.ala.org.au/home/record-a-sighting/">Contribute your sighting</a> to the Atlas of Living Australia.</p>
-        </div>
 
-      </div>
-      <!-- Acknowledgement section -->
-      <div class="row col-sm-12 acknowledgement-callout acknowledgement-callout-ala">
-        <div class="col-md-10 col-sm-12">
-          <h4 class="margin-bottom-half-1">Acknowledgement of Traditional Owners and Country</h4>
-          <p>The Atlas of Living Australia acknowledges Australia's Traditional Owners and pays respect to the past and present Elders of the nation's Aboriginal and Torres Strait Islander communities. We honour and celebrate the spiritual, cultural and customary connections of Traditional Owners to country and the biodiversity that forms part of that country.</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <!-- Logo section -->
-      <div class="row">
-        <div class="col-md-12">
-          <h5 class="footer-bonus-heading">The ALA is made possible by contributions from its partners, is supported by NCRIS and hosted by CSIRO</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12 footer-bonus-brands">
-          <a href="https://www.education.gov.au/national-collaborative-research-infrastructure-strategy-ncris" class="img-responsive" id="ncris">NCRIS</a>
-          <a href="https://www.csiro.au/" id="csiro">CSIRO</a>
-          <a href="https://www.gbif.org/" class="img-responsive" id="gbif">GBIF</a>
-        </div>
-      </div>
-      <!-- End logo section -->
-
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="footer-list">
-            <li class="footer-item footer-social">
-              <a id="twitter" title="Twitter" href="https://twitter.com/#!/atlaslivingaust"><img src="::headerFooterServer::/img/social_twitter_29px.png" alt="Twitter" /></a>
-            </li>
-            <li class="footer-item footer-social">
-              <a id="facebook" title="Facebook" href="https://www.facebook.com/atlasoflivingaustralia"><img src="::headerFooterServer::/img/social_facebook_29px.png" alt="Facebook" /></a>
-            </li>
-            <li class="footer-item footer-item-text footer-item-start"><a href="::centralServer::/who-we-are/terms-of-use/#Copyright">Copyright</a></li>
-            <li class="footer-item footer-item-text"><a href="::centralServer::/about-the-atlas/terms-of-use/">Terms of use</a></li>
-            <li class="footer-item footer-item-text"><a href="::centralServer::/about-the-atlas/contact-us/">Contact us</a></li>
-            <li class="footer-item footer-item-status"><a href="https://status.ala.org.au/">System status</a></li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- End Container -->
-  </footer>
-
-  <!-- Creative commons bar -->
-  <div class="alert alert-creativecommons hidden-print" role="alert">
-    <div class="container alert-container">
-      <div class="row-fluid">
-        <div class="col-md-12">
-          <p class="alert-text text-creativecommons">
-            This work is licensed under a <a href="https://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>&ensp;<a rel="license" href="https://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons License" style="border-width:0" src="::headerFooterServer::/img/cc-by.png"></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Creative commons bar -->
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-4355440-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
-<!-- ALA self hosted analytics -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.ala.org.au"]);
-  _paq.push(["setDomains", ["*.ala.org.au"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://ash.ala.org.au/";
-    _paq.push(['setTrackerUrl', u+'ash.html']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'ash.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="https://ash.ala.org.au/ash.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End ALA self hosted analytics -->
-<!-- ALA support widget -->
-<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
-<script type="text/javascript">
-FreshWidget.init("", {"queryString": "&widgetType=popup&helpdesk_ticket[group_id]=6000207804&helpdesk_ticket[product_id]=6000005589&formTitle=ALA+support", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#d5502a", "alignment": "2", "offset": "197px", "formHeight": "500px", "url": "https://support.ala.org.au"} );
-</script>
-<!-- end ALA support widget -->
+    </div> <!--/#container-fluid -->
+</div><!--/#footer -->
+</body>
+</html>

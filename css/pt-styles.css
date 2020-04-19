@@ -1,0 +1,526 @@
+/* PT custom style rules - overrides all styles, including ala-styles
+================================= */
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /*overflow-x: hidden;*/
+
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Navbar
+================================= */
+
+.name-and-slogan {display: inline-grid;}
+.site-slogan {display: inline-grid;text-transform: none;color:#8D8D8D;}
+.site-name {display: inline-block;text-transform: none;color:#CCC;}
+.banner-top {background:#FFFFFF url(http://dados.gbif.pt/images/headbackground101.jpg) no-repeat right top; height: 92px; margin-right: -15px;}
+/*
+.navbar-default {background-color: #999B9E;background-image:none;box-shadow:none;-webkit-box-shadow:none; height: 50px;z-index: 1001;  text-transform: uppercase;}
+*/
+
+
+nav.navbar.navbar-default {
+  background-color: #999B9E;
+  text-transform: uppercase;
+  border: #999B9E solid 1px;
+  border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+  nav.navbar.navbar-default {
+    height: 50px;z-index: 1001;
+  }
+}
+
+html body nav.navbar.navbar-default div.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+nav.navbar.navbar-default div.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+
+
+nav.navbar.navbar-default ul.nav.navbar-nav li a {
+  color: white;
+  margin-top: -16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  nav.navbar.navbar-default div.container-fluid ul.nav.navbar-nav li a {
+  }
+}
+
+@media (max-width: 767px) {
+  nav.navbar.navbar-default {
+    margin-left: 0px;
+    padding-left: 9px;
+    padding-right: 14px;
+  }
+  nav.navbar.navbar-default div.container-fluid ul.nav.navbar-nav li a {
+    margin-top: 0px;
+  }
+  nav.navbar.navbar-default div.container-fluid ul.nav.navbar-nav li a:hover {
+    margin-top: 0px;
+  }
+}
+
+html body nav.navbar.navbar-default div.container-fluid div#general-menu.collapse.navbar-collapse {
+  padding-left: 0px;
+}
+
+nav.navbar.navbar-default div.container-fluid div.navbar-header button.navbar-toggle {
+  margin-top: -5px;
+}
+
+
+nav.navbar.navbar-default ul.nav.navbar-nav li.active a {
+  color: white;
+  background: rgb(0,107,29);
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav li a:hover {
+  color: white;
+  background: rgb(0,107,29);
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav li .dropdown-menu {
+  background-color: rgba(0,130,2,.9);
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav li .dropdown-menu a{
+  margin: 5px 0 5px 0;
+  padding: 5px 10px;
+  border-radius: 0px;
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav li .dropdown-menu a:hover{
+  margin: 5px 0 5px 0;
+  padding: 5px 10px;
+  border-radius: 0px;
+}
+
+
+nav.navbar.navbar-default form.navbar-form.navbar-right {
+  margin-top: -7px;
+}
+
+nav.navbar.navbar-default form.navbar-form.navbar-right input.form-control {
+  border-radius: 4px;
+}
+
+
+nav.navbar.navbar-default form.navbar-form.navbar-right button.btn.btn-default {
+  border-radius: 4px;
+  background: white;
+}
+
+/* Navbar-Inverse Atlas menu
+================================= */
+div.navbar.navbar-inverse.navbar-static-top {
+  margin-top: 20px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+div.navbar.navbar-inverse.navbar-static-top a.brand {
+  font-variant: small-caps;
+  font-size: 1.5vw;
+}
+
+div.navbar.navbar-inverse.navbar-static-top a.brand:hover {
+  font-variant: small-caps;
+  font-size: 1.5vw;
+  color: #ffffff;
+}
+
+div.navbar.navbar-inverse.navbar-static-top ul.list-inline li a:hover {
+  color: #ffffff;
+}
+
+div.navbar.navbar-inverse.navbar-static-top ul.list-inline li.dropdown.open ul.dropdown-menu li a:hover {
+  color: #262626;
+}
+
+/* styles for all modules
+================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: "PT Sans",sans-serif;
+  color: #007d24;
+}
+
+a {
+  color: #007d24;
+}
+
+a:hover {
+  color: #005418;
+}
+
+
+
+
+input#search.form-control.ac_input.general-search.ui-autocomplete-input {
+  border-radius: 4px;
+}
+
+input.form-control.btn.btn-primary {
+  background-image: linear-gradient(to bottom, #3ec12d 0%, #246212 100%);
+}
+
+input.form-control.btn.btn-primary:hover {
+  background-image: linear-gradient(to top, #3ec12d 0%, #246212 100%);
+}
+
+input.btn.btn-primary
+
+
+
+.btn.btn-primary {
+  background-image: linear-gradient(to top, #3ec12d 0%, #246212 100%);
+}
+
+a.btn.btn-primary {
+  background-image: linear-gradient(to bottom, #3ec12d 0%, #246212 100%);
+}
+
+
+div.tabbable ul#searchTabs.nav.nav-tabs li a {
+  color: #007d24;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+}
+
+div.tabbable ul#searchTabs.nav.nav-tabs li a:hover {
+  color: #005418;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: solid 1px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+}
+
+div.section.filter-buttons div#all.all.selected h2 a {
+  color: #007d24;
+}
+
+div#map-list-col.col-md-8 div.tabbable ul#home-tabs.nav.nav-tabs li.active a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #007d24;
+  background-color: #fff;
+}
+
+div#map-list-col.col-md-8 div.tabbable ul#home-tabs.nav.nav-tabs li.active a:hover {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #005418;
+  background-color: #fff;
+}
+
+
+
+/* end styles for all modules
+================================= */
+
+/* homepage- main content
+================================= */
+
+/*Carousel*/
+
+div#myCarousel.carousel.slide div.container.wrap {
+  z-index: 900;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0);
+}
+
+div#myCarousel.carousel.slide div.container.wrap form div.input-group.input-group-lg input.form-control {
+  background-color: rgba(255,255,255,0.7);
+}
+div.main div.container-fluid> div#myCarousel.carousel.slide div.container.wrap form div.input-group.input-group-lg input.form-control {
+  color: white;
+}
+
+div#myCarousel.carousel.slide div.carousel-inner div.item div.carousel-caption h3.fontCarouselH3 a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*/Carousel*/
+
+/*contadores*/
+
+.circle {
+    background: #d4a233;
+    border-radius: 250px;
+    color: white;
+    height: 250px;
+    width: 250px;
+    display: table;
+    margin: 80px auto;
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+    font-family: "PT Sans",sans-serif;
+    padding: 20px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-size: 170%;
+    /*margin-top: -50px;*/
+    text-align: center;
+}
+
+.circle a{
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+/*/contadores*/
+
+/* destaques topicos portal*/
+
+div.destaquesPortal div.container-fluid {
+  font-weight: lighter;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #4a583d;
+  color: white;
+}
+
+div.destaquesPortal div.container-fluid h2.block-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+div.destaquesPortal div.container-fluid div.row {
+  padding-left: 120px;
+  padding-right: 120px;
+  font-weight: lighter;
+}
+
+div.destaquesPortal div.container-fluid div.col-sm-8.col-sm-offset-2.text-center.section2H {
+  font-size: 12px;
+  font-size: 130%;
+  font-weight: lighter;
+}
+
+
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos h2.section2H
+{
+  font-size: 130%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "PT Sans",sans-serif;
+  font-weight: lighter;
+}
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos p.section2 {
+  color: white;
+  font-family: "PT Sans",sans-serif;
+  font-weight: lighter;
+}
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos p.section2 ul{
+ 	padding-left: 0px;
+  font-size: 100%;
+}
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos p.section2 li{
+	font-size: 100%;
+	list-style: none;
+}
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos ul.section2 li a {
+	font-size: 100%;
+  color: #0bcc42f2;
+}
+
+div.destaquesPortal div.container-fluid div.row div.col-sm-3.topicos ul.section2 li a:hover{
+	font-size: 100%;
+	color: #9cf1b4;
+	text-decoration: none;
+}
+
+/* /destaques topicos portal*/
+
+
+/* publicaUsa */
+@media only screen and (max-width: 767px) {
+  .publicaUsa{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .publicaUsa{
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.publicaUsa .row .col-sm-6{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.publicaDados{
+    background-image:url('http://dados.gbif.pt//images/biodiv/coruja.jpg');
+    max-width: 100%;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    min-height: 385px;
+}
+
+.usaDados{
+    background-image:url('http://dados.gbif.pt//images/biodiv/paisagem_900.jpg');
+    max-width: 100%;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+    min-height: 385px;
+}
+
+.section3H{
+  font-family: "PT Sans",sans-serif;
+	padding: 25px;
+	font-size: 230%;
+	color: #FFFFFF;
+	background: rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+
+p.section3{
+  font-family: "PT Sans",sans-serif;
+	color: #FFFFFF;
+	padding: 25px;
+	font-size: 120%;
+	background: rgba(0,0,0,0.5);
+}
+
+.section3 a{
+	color: #19C02D;
+	list-style: none;
+}
+
+.section3 a:hover{
+	color: #139823;
+	text-decoration: none;
+}
+
+/* /publicaUsa */
+
+/* /homepage- main content
+================================= */
+
+
+/* Footer
+================================= */
+
+div#footer div.container-fluid {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.row.footergbifpt {
+  background: #eeeeee;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+html body div#footer div.container-fluid div.container-fluid div.row.footergbifpt div.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+html body div#footer div.container-fluid div.container-fluid div.row.footergbifpt div.row h3.text-center {
+  text-transform: uppercase;
+  color: #bbb;
+  font-size: 16px;
+
+}
+
+html body div#footer div.container-fluid div.container-fluid div.row.footermenu {
+  background-color: #808080;
+  padding: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
+html body div#footer div.container-fluid div.container-fluid div.row.footermenu div.col-sm-6 div.col-sm-3 h2 a, html body div#footer div.container-fluid div.container-fluid div.row.footermenu div.col-sm-6 div.col-sm-3 h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+
+html body div#footer div.container-fluid div.container-fluid div.row.footermenu div.col-sm-6 div.col-sm-3 ul li a, html body div#footer div.container-fluid div.container-fluid div.row.footermenu div.col-sm-6 div.col-sm-3 ul li {
+  font-size: 12px;
+  color: #fff;
+}
+
+span.tab-space {
+  padding-left:1em;
+}
+
+.credits{
+  padding: 15px;
+  background: #696868;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.credits a{
+  color: #5DB2FC;
+}
+
+div.container-fluid div.row.license {
+  background-color: #434343;
+  padding: 15px;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div.container-fluid div.row.license a{
+  color: #fff;
+  text-decoration: underline;
+  font-size: 12px;
+}
